@@ -3,12 +3,12 @@ import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/router';
-import DropdownHome from "./dropdown-home";
-import DropdownMinistries from './dropdown-ministries';
-import DropdownForm from './dropdown-form';
-import DropdownPlaylist from './dropdown-playlist';
-import DropdownRE from './dropdown-re';
-import DropdownNavbar from "./dropdown-navbar";
+import DropdownHome from "./DropdownHome";
+import DropdownMinistries from './DropdownMinistries';
+import DropdownForm from './DropdownForm';
+import DropdownPlaylist from './DropdownPlaylist';
+import DropdownRE from './DropdownRe';
+import DropdownNavbar from "./DropdownNavbar";
 
 
 

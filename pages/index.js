@@ -3,9 +3,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import heroPicture from "../public/SandDune.jpg";
-import MiddleGrid from "../components/middle-grid";
-import Calendar from "../components/calendar.js";
-import SliderHomepage from "../components/slider-homepage.js"
+import MiddleGrid from "../components/MiddleGrid";
+import Calendar from "../components/Calendar.js";
+import SliderHomepage from "../components/SliderHomepage.js"
 
 
 

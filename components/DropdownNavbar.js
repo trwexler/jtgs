@@ -1,11 +1,11 @@
 import { useReducer } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import DropdownHome from './dropdown-home';
-import DropdownMinistries from './dropdown-ministries';
-import DropdownRE from './dropdown-re';
-import DropdownForm from './dropdown-form';
-import DropdownPlaylist from './dropdown-playlist';
+import DropdownHome from './DropdownHome';
+import DropdownMinistries from './DropdownMinistries';
+import DropdownRE from './DropdownRe';
+import DropdownForm from './DropdownForm';
+import DropdownPlaylist from './DropdownPlaylist';
 import { useRouter } from "next/router";
 import Link from "next/link";
 

@@ -8,7 +8,7 @@ import { faLocationDot, faPhone, faFax, faEnvelope } from '@fortawesome/free-sol
 const Footer = () => {
 
     return (
-        <div className="flex flex-col bg-gray-500 px-20 pb-10 pt-16 text-center text-white text-md bottom-0 mt-10 lg:flex-row justify-between lg:text-lg lg:text-left">
+        <div className="flex flex-col bg-gray-500 pb-10 pt-16 text-center text-white text-md bottom-0 mt-10 lg:flex-row justify-between lg:text-lg lg:text-left">
             <div className="lg:ml-10">
                 <ul>
                     <li className="font-bold tracking-wider text-[#C0C0C0]">Address</li>
