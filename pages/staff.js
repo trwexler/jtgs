@@ -1,6 +1,6 @@
 import Card from "../components/Card.js";
 import Image from "next/image"
-import { staffData } from "../components/staff-data.js";
+import { staffData } from "../components/StaffData.js";
 
 
 

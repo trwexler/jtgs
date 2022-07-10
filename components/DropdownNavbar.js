@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import DropdownHome from './DropdownHome';
 import DropdownMinistries from './DropdownMinistries';
-import DropdownRE from './DropdownRe';
+import DropdownRE from './DropdownRE';
 import DropdownForm from './DropdownForm';
 import DropdownPlaylist from './DropdownPlaylist';
 import { useRouter } from "next/router";
@@ -43,14 +43,15 @@ const DropdownNavbar = () => {
     
     return (
         <>
-            <ul className="grid grid-template-rows-8 text-center text-white min-w-max text-sm bg-black opacity-85 rounded ml-20">
+            <ul className="grid grid-template-rows-8 text-center text-white min-w-max text-sm bg-black opacity-85 rounded ">
                 <li className="px-4 py-2 relative hover:bg-blue-800 border-b cursor-pointer"
-                    onClick={() =>  dispatch({ type: 'showHome' }) }>
+                    onClick = {() => router.push("/")}>
                     Home
                     <span className="ml-2">
                         <FontAwesomeIcon
                             icon={faCaretDown}
-                            className="fas fa-caret-down">
+                            className="fas fa-caret-down"
+                            onClick={() =>  dispatch({ type: 'showHome' }) }>
                         </FontAwesomeIcon>
                     </span>
 

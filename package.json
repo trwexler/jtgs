@@ -29,6 +29,7 @@
     "react-player": "^2.10.1",
     "react-slick": "^0.29.0",
     "react-youtube": "^9.0.2",
+    "reaptcha": "^1.12.1",
     "slick-carousel": "^1.8.1",
     "webpack-dev-server": "^4.9.2"
   },

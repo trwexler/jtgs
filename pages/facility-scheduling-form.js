@@ -1,18 +1,20 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
-import ReCAPTCHA from "react-google-recaptcha";
+//import ReCAPTCHA from "react-google-recaptcha";
 import Image from "next/image";
 import emailjs from '@emailjs/browser';
-
+import Recaptcha from 'reaptcha';
 
 
 
 const FacilitySchedulingForm = () => {
 
-    const onChange = (value) => {
-        console.log("Captcha value:", value);
-    }
+    // const onChange = (value) => {
+    //     console.log("Captcha value:", value);
+    // }
+
+    const [captchaVerfied, setCaptchaVerified] = useState(false);
 
     const form = useRef();
 
@@ -36,6 +38,11 @@ const FacilitySchedulingForm = () => {
     const handleClick = () => {
 
     }
+
+
+    const onVerify = recaptchaResponse => {
+        setCaptchaVerified(true)
+    };
 
 
     return (
@@ -226,12 +233,14 @@ const FacilitySchedulingForm = () => {
                     Recaptcha
                 </p>
 
-                <ReCAPTCHA
+                {/* <ReCAPTCHA
                     // sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                    data-size="compact"
                     sitekey='dummykey'
-
                     onChange={onChange}
-                />
+                /> */}
+
+                <Recaptcha sitekey="6LcTidkgAAAAAA6UpwyNYHIs7qD8FM9OTFIBf4gX" onVerify={onVerify}/>
 
                 {/* <button
                     className="mb-24 mt-10 text-lg text-white bg-black px-5 py-3 shadow-lg shadow-gray-400 rounded-lg hover:bg-gray-800 ease-in"
@@ -240,11 +249,11 @@ const FacilitySchedulingForm = () => {
                 </button> */}
 
                 <input
-                    className="mb-24 mt-10 text-lg text-white bg-black 
-                px-5 py-3 shadow-lg shadow-gray-400 rounded-lg 
-                hover:bg-gray-800 ease-in"
+                    className="mb-24 mt-10 text-lg text-white bg-black px-5 py-3 shadow-lg shadow-gray-400 rounded-lg hover:bg-gray-800 ease-in"
                     type="submit"
-                    value="Send" />
+                    // send="value"
+                    disabled={!captchaVerfied}
+                    />
             </form>
 
         </div>
