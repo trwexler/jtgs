@@ -1,24 +1,36 @@
-import React from 'react'
-import { useRouter } from "next/router";
-import Link from "next/link";
+import React, { useContext } from 'react'
+import { GlobalContext } from '../context/GlobalContext'
+import Link from "next/link"
+import { useRouter } from 'next/router'
 
 
 
 const DropdownForm = () => {
     
     const router = useRouter();
+    const { showNavbarMenu, showCloseButton } = useContext(GlobalContext); 
     
 
     return (
         <div>
-            <ul className = "grid grid-template-rows-8 text-left min-w-max bg-blue-900 shadow lg:bg-gray-100 lg:opacity-85 rounded">
-                <li className = "px-4 py-2 hover:bg-blue-300 hover:text-white border-b">
-                    <Link href = "/parish-registration-form">Parish Registration Form</Link>
+            <ul className = "grid grid-template-rows-8 text-left min-w-max bg-blue-800 shadow lg:bg-gray-100 lg:opacity-85 rounded">
+                <li className = "px-4 py-2 hover:bg-blue-300 hover:text-white border-b"
+                onClick = {() => { 
+                        router.push("/parish-registration-form");
+                        showNavbarMenu();
+                        showCloseButton();
+                        }}>
+                    Parish Registration Form
                 </li>
                 
 
-                <li className = "px-4 py-2 hover:bg-blue-300 hover:text-white border-b">
-                    <Link href = "/facility-scheduling-form">Facility Scheduling Form</Link>
+                <li className = "px-4 py-2 hover:bg-blue-300 hover:text-white border-b"
+                onClick = {() => { 
+                        router.push("/facility-scheduling-form");
+                        showNavbarMenu();
+                        showCloseButton();
+                        }}>
+                    Facility Scheduling Form
                 </li>
 
 

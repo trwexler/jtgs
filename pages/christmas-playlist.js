@@ -22,8 +22,7 @@ const ChristmasPlaylist = () => {
         }
     }
 
-    // const [selectedSong, setSelectedSong] = useState("")
-    // const [selectedTitle, setSelectedTitle] = useState("")
+
     const [state, dispatch] = useReducer(reducer, { selectedSong: "", selectedTitle: "" })
 
 
@@ -31,7 +30,7 @@ const ChristmasPlaylist = () => {
         <div className="mx-20 lg:mx-44">
             <Image
                 className=""
-                src={imgURL}                
+                src={imgURL}
                 loader={() => imgURL}
                 alt=""
                 layout="responsive"
@@ -45,15 +44,13 @@ const ChristmasPlaylist = () => {
             </p>
 
             <div className="lg:mx-36">
-                <p className="text-md md:text-lg lg:text-xl mb-4">{state.selectedTitle}</p>
+                <p className="text-sm md:text-md lg:text-lg mb-4">{state.selectedTitle}</p>
                 <ReactAudioPlayer className="w-full" src={`${state.selectedSong}`} autoPlay controls />
 
 
                 <ul className="w-50 mt-10 leading-10">
                     <li
                         className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
-                        // onClick={() => { setSelectedSong("/Believer.mp3")
-                        // setSelectedTitle("Believer - Imagine Dragons") }} >
                         onClick={() => {
                             dispatch({ type: "CurrentSong", payload: "/Believer.mp3" })
                             dispatch({ type: "SongTitle", payload: "Believer - Imagine Dragons" })

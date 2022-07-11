@@ -12,11 +12,11 @@ const PhotoGallery = () => {
     const router = useRouter();
 
     return (
-        <div className="mx-20 md:mx-32 lg:mx-44">
+        <>
             <div>
                 <Image
                     className=""
-                    src={imgURL}                    
+                    src={imgURL}
                     loader={() => imgURL}
                     alt=""
                     layout="responsive"
@@ -30,12 +30,16 @@ const PhotoGallery = () => {
                 Photo Gallery
             </p>
 
-            <p className="text-sm md:text-md lg:text-lg mt-5 underline hover:text-teal-600">
-                <Link href="https://drive.google.com/drive/folders/1hvPEPop1xPxX2BFfWO_jFnY8J8a2zkke">Gallery</Link>
-            </p>
+            <div className="mx-20 md:mx-32 lg:mx-44">
 
 
-        </div>
+                <p className="text-sm md:text-md lg:text-lg mt-5 underline hover:text-teal-600">
+                    <Link href="https://drive.google.com/drive/folders/1hvPEPop1xPxX2BFfWO_jFnY8J8a2zkke">Gallery</Link>
+                </p>
+
+
+            </div>
+        </>
     )
 }
 
