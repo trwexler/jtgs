@@ -8,7 +8,7 @@ const MiddleGrid = () => {
 
     return (
         <>        
-        <p className = "text-center font-semibold tracking-widest text-gray-500 lg:text-3xl">ADDITIONAL RESOURCES </p>
+        <p className = "text-xl md:text-2xl lg:text-3xl text-center font-semibold tracking-widest text-gray-500 ">ADDITIONAL RESOURCES </p>
 
         <div className="grid grid-cols-1 py-10 mx-16 lg:mx-36 mt-10 lg:grid-cols-3 gap-10">
 
@@ -54,8 +54,8 @@ const MiddleGrid = () => {
 
 
             <div className="relative">
-                <div className="w-100 lg:h-56 lg:h-56 lg:border border-gray-400 rounded-md shadow-lg"></div>
-                <p className="cursor-pointer text-sm text-gray-500 font-semibold absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:text-blue-500 hover:scale-125 transition-all lg:text-xl"
+                <div className="w-100 lg:h-56 lg:border border-gray-400 rounded-md shadow-lg"></div>
+                <p className="cursor-pointer text-sm text-gray-500 font-semibold absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:text-blue-500 hover:scale-125 ease-in duration-300 lg:text-xl"
                     onClick={() =>
                         router.push("https://bible.usccb.org/daily-bible-reading")
                     }

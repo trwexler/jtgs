@@ -20,12 +20,9 @@ return (
 
         <Image
                 className=""
-                src={imgURL}
-                //loader function generates the URL for the image by appending a root domain to the provided source
-                //apparently we don't need the loader function for locally stored images
+                src={imgURL}                
                 loader={() => imgURL}
-                alt=""
-                // layout = "fill" 
+                alt=""                
                 layout="responsive"
                 objectFit="cover"
                 width={1250}
@@ -33,15 +30,15 @@ return (
             />
 
 
-        <p className="text-xl md:text-2xl lg:text-3xl lg:text-3xl mt-8 mb-8 text-red-800 font-semibold tracking-wider text-center lg:mx-44">
+        <p className="text-xl md:text-2xl lg:text-3xl mt-8 mb-8 text-red-800 font-semibold tracking-wider text-center lg:mx-44">
             Parish Online Registration Form (Complete One Form For Each Person)
         </p>
 
         
-            <p className="text-lg lg:mx-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
+            <p className="text-sm lg:text-md lg:mx-44">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
 
-        <form className="sm:text-sm md:text-md lg:text-lg lg:mx-48">
+        <form className="sm:text-sm md:text-md lg:text-lg lg:mx-44">
             {/* <div className="flex flex-col py-4">
                 <label className="font-bold pb-2">
                     Last Name <span className="text-red-600"> &#42; </span>
@@ -64,35 +61,35 @@ return (
             
             <div className="flex flex-col justify-between my-8 lg:flex-row ">
                 <div className="flex flex-col space-y-2 mb-4">
-                <label className="font-bold text-gray-600">
+                <label className="font-semibold text-gray-600">
                     Last Name <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-sm md:text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
                 </div>
 
                 <div className="flex flex-col space-y-2 ">
-                <label className="font-bold text-gray-600">
+                <label className="font-semibold text-gray-600">
                     First Name <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-sm md:text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
                 </div>                
                 
             </div>
 
 
             <div className="flex flex-col my-8">
-                <label className="font-bold mb-2 text-gray-600">
+                <label className="font-semibold mb-2 text-gray-600">
                     Address <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-md lg:text-lg px-4 py-2 shadow-md" />
             </div>
 
 
             <div className="flex flex-col my-8">
-                <label className="font-bold mb-2 text-gray-600">
+                <label className="font-semibold mb-2 text-gray-600">
                     City <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -101,11 +98,11 @@ return (
 
 
             <div className="flex flex-col my-8">
-                <label className="font-bold mb-2 text-gray-600">
+                <label className="font-semibold mb-2 text-gray-600">
                     US States <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <select className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md">
+                <select className="border border-stone-300 bg-gray-100 rounded-lg text-md lg:text-lg px-4 py-2 shadow-md">
                     <option value="">- Select State -</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -163,20 +160,20 @@ return (
 
 
             <div className="flex flex-col my-8">
-                <label className="font-bold mb-2 text-gray-600">
+                <label className="font-semibold mb-2 text-gray-600">
                     Zip <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-sm md:text-md lg:text-lg px-4 py-2 shadow-md" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-md lg:text-lg px-4 py-2 shadow-md" />
             </div>
 
 
             <div className="flex flex-col my-8">
-                <label className="font-bold mb-2 text-gray-600">
+                <label className="font-semibold mb-2 text-gray-600">
                     Date <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="date" className="border border-stone-300 bg-gray-100 rounded-lg text-sm md:text-md lg:text-lg px-4 py-2 shadow-md" placeholder="" />
+                <input type="date" className="border border-stone-300 bg-gray-100 rounded-lg text-md lg:text-lg px-4 py-2 shadow-md" placeholder="" />
             </div>
 
 
@@ -201,19 +198,19 @@ return (
 
             <div className="flex flex-col justify-between my-8 lg:flex-row ">
                 <div className="flex flex-col space-y-2 mb-4">
-                <label className="font-bold text-gray-600">
+                <label className="font-semibold text-gray-600">
                     Email
                 </label>
 
-                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-sm md:text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
                 </div>
 
                 <div className="flex flex-col space-y-2 ">
-                <label className="font-bold text-gray-600">
+                <label className="font-semibold text-gray-600">
                     2nd Email
                 </label>
 
-                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-sm md:text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
                 </div>                
                 
             </div>
@@ -221,26 +218,26 @@ return (
 
             <div className="flex flex-col justify-between my-8 lg:flex-row ">
                 <div className="flex flex-col space-y-2 mb-4">
-                <label className="font-bold text-gray-600">
+                <label className="font-semibold text-gray-600">
                     Telephone
                 </label>
 
-                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-sm md:text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
                 </div>
 
                 <div className="flex flex-col space-y-2 ">
-                <label className="font-bold text-gray-600">
+                <label className="font-semibold text-gray-600">
                     2nd Telephone
                 </label>
 
-                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-sm md:text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-md lg:text-lg lg:w-[370px] px-4 py-2 shadow-md" />
                 </div>                
                 
             </div>
 
 
-            <div className="flex flex-col my-8">
-                <label className="font-bold mb-2 text-gray-600">
+            <div className="flex flex-col my-8 text-md lg:text-lg">
+                <label className="font-semibold mb-2 text-gray-600">
                     Birth Date <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -248,8 +245,8 @@ return (
             </div>
 
 
-            <div className="flex flex-col my-8">
-                <label className="font-bold mb-2 text-gray-600">
+            <div className="flex flex-col my-8 text-md lg:text-lg">
+                <label className="font-semibold mb-2 text-gray-600">
                     Religion <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -257,8 +254,8 @@ return (
             </div>
 
 
-            <div className="flex flex-col my-8">
-                <label className="font-bold mb-2 text-gray-600">
+            <div className="flex flex-col my-8 text-md lg:text-lg">
+                <label className="font-semibold mb-2 text-gray-600">
                     Marital Status <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -272,8 +269,8 @@ return (
             </div>
 
 
-            <div className="flex flex-col my-8 text-sm md:text-md lg:text-lg ">
-                <label className="font-bold mb-2 text-gray-600">
+            <div className="flex flex-col my-8 text-md lg:text-lg ">
+                <label className="font-semibold mb-2 text-gray-600">
                     Sacraments
                 </label>
 
@@ -307,7 +304,7 @@ return (
 
             <div className="flex flex-col justify-between my-8 lg:flex-row ">
                 <div className="flex flex-col space-y-2 mb-4">
-                <label className="font-bold text-gray-600">
+                <label className="font-semibold text-gray-600">
                     Office Use Only (Received)
                 </label>
 
@@ -315,7 +312,7 @@ return (
                 </div>
 
                 <div className="flex flex-col space-y-2 mb-4">
-                <label className="font-bold text-gray-600">
+                <label className="font-semibold text-gray-600">
                     Parish SOFT
                 </label>
 
@@ -323,7 +320,7 @@ return (
                 </div>
 
                 <div className="flex flex-col space-y-2">
-                <label className="font-bold text-gray-600">
+                <label className="font-semibold text-gray-600">
                     OSV
                 </label>
 
@@ -335,7 +332,7 @@ return (
 
 
 
-            <p className="font-bold my-4 text-gray-600">
+            <p className="font-semibold my-4 text-gray-600">
                 Recaptcha
             </p>
 

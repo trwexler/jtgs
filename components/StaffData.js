@@ -32,9 +32,16 @@ Contact: "856.461.0100 Ext. 202",
 Email: "r.benner@jesusthegoodshepherd.org"
 },
 
+{
+Id:5,     
+Image: "https://jesusthegoodshepherd.org/wp-content/uploads/nophoto-male-150x150.png",
+Name: "Mr. Eduardo Trani - Deacon",
+Contact: "856.461.0100 Ext. 202",
+Email: "e.trani@jesusthegoodshepherd.org"
+},
 
 {
-Id:5, 
+Id:6, 
 Image: "https://jesusthegoodshepherd.org/wp-content/uploads/nophoto-female-150x150.png",
 Name: "Rowell Reyes - Bookkeeper",
 Contact: "856.461.0100 ext. 207",
@@ -42,7 +49,7 @@ Email: "r.reyes@jesusthegoodshepherd.org"
 },
 
 {
-Id:6, 
+Id:7, 
 Image: "https://www.jesusthegoodshepherd.org/wp-content/uploads/Staff/DSC_3114-scaled-300x205.jpg",
 Name: "Sheryl Zoppina - Parish Secretary",
 Contact: "856.461.0100 ext. 201",
@@ -50,7 +57,7 @@ Email: "s.zoppina@jesusthegoodshepherd.org"
 },
 
 {
-Id:7, 
+Id:8, 
 Image: "https://www.jesusthegoodshepherd.org/wp-content/uploads/Staff/DSC_3195-1-scaled-300x225.jpg",
 Name: "Maria Gimello - Director of Religious Education",
 Contact: "856.461.0100 ext. 209",
@@ -58,7 +65,7 @@ Email: "m.gimello@jesusthegoodshepherd.org"
 },
 
 {
-Id:8, 
+Id:9, 
 Image: "https://www.jesusthegoodshepherd.org/wp-content/uploads/Staff/DSC_3120-1-scaled-300x230.jpg",
 Name: "Eneida Perez - Secretary of Religious Education",
 Contact: "856.461.0100 Ext. 210",
@@ -66,20 +73,20 @@ Email: "e.perez@jesusthegoodshepherd.org"
 },
 
 {
-Id:9, 
+Id:10, 
 Image: "https://www.jesusthegoodshepherd.org/wp-content/uploads/Staff/DSC_3278-scaled-300x239.jpg",
 Name: "Joel Malabuyoc - Maintenance/Cemetery",
 },
 
 {
-Id:10, 
+Id:11, 
 Image: "https://jesusthegoodshepherd.org/wp-content/uploads/nophoto-female-150x150.png",
 Name: "Mrs. Kamilla Neves, Brazilian & Portuguese Community",
 Contact: "856.461.0100 Ext. 211",
 },
 
 {
-Id:11, 
+Id:12, 
 Image: "https://jesusthegoodshepherd.org/wp-content/uploads/nophoto-female-150x150.png",
 Name: "Ms. Mariana Gonzalez, Latino Community",
 Contact: "856.461.0100 Ext. 211",

@@ -14,8 +14,9 @@ const ContactForm = () => {
 
 
     return (
-        <div className="mx-20 lg:mx-44">
-            <div>
+        <>
+        
+            
         <Image
                     className=""
                     src={imgURL}                    
@@ -26,11 +27,13 @@ const ContactForm = () => {
                     width={1250}
                     height={380}
                 />
-            </div>  
+            
 
-            <p className="text-xl md:text-2xl lg:text-3xl lg:text-3xl mt-8 mb-8 text-red-800 font-semibold tracking-wider text-center">Contact Me</p>
+            <p className="text-xl md:text-2xl lg:text-3xl my-8 text-red-800 font-semibold tracking-wider text-center">Contact Me</p>
 
-            <p className="text-lg lg:mx-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
+            <div className="mx-20 lg:mx-44">
+
+            <p className="text-sm lg:text-md lg:mx-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
             <form className="lg:mx-48">
             <div className="flex flex-col my-8">
@@ -86,6 +89,8 @@ const ContactForm = () => {
 
 
         </div>
+        </>
+        
     )
 }
 

@@ -50,7 +50,7 @@ const LentenPlaylist = () => {
             </p>
 
             <div className="lg:mx-36">
-                <p className="text-md md:text-lg lg:text-xl mb-4">{state.selectedTitle}</p>
+                <p className="text-sm md:text-md lg:text-lg mb-4">{state.selectedTitle}</p>
             <ReactAudioPlayer className="w-full" src={`${state.selectedSong}`} autoPlay controls />
 
 

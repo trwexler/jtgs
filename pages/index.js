@@ -3,9 +3,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import heroPicture from "../public/SandDune.jpg";
-import MiddleGrid from "../components/middle-grid";
-import Calendar from "../components/calendar.js";
-import SliderHomepage from "../components/slider-homepage.js"
+import MiddleGrid from "../components/MiddleGrid";
+import Calendar from "../components/Calendar.js";
+import SliderHomepage from "../components/SliderHomepage.js"
 
 
 
@@ -50,7 +50,7 @@ export default function Home() {
       {/* About the church section */}
 
       <div className="pt-20 pb-5 mx-16 lg:text-xl lg:leading-10 lg:mx-36">
-        <p className = "text-center font-semibold text-lg tracking-widest text-gray-500 mb-10 lg:text-3xl">ABOUT US </p>        
+        <p className = "text-xl md:text-2xl lg:text-3xl text-center font-semibold tracking-widest text-gray-500 mb-10">ABOUT US </p>        
         <p className="mb-10 italic">Established in 2008 through merger of the parishes of St. Peter in Riverside and St. Joseph in Beverly, this vibrant diverse
           Catholic family of the Diocese of Trenton serves the Delaware Riverfront communities of Beverly, Burlington Township, Delanco,
           Edgewater Park and Riverside.</p>

@@ -57,7 +57,7 @@ const MassLivestream = () => {
             /> */}
 
 
-            <div className="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-9 lg:mx-20">
+            <div className="aspect-w-16 aspect-h-9 lg:mx-20">
                 <iframe src="https://www.youtube.com/embed/86YLFOog4GM?autoplay=1" 
                 title="YouTube video player" 
                 frameBorder="0" 

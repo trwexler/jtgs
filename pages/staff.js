@@ -1,6 +1,6 @@
 import Card from "../components/Card.js";
 import Image from "next/image"
-import { staffData } from "../components/staff-data.js";
+import { staffData } from "../components/StaffData.js";
 
 
 
@@ -12,15 +12,14 @@ const Staff = () => {
 
 
     return (
+        
 
-        // <div className="flex flex-col justify-around my-4 px-20 mx-auto font-Alice font-semibold  lg:w-full">
-        <div className="mx-20 md:mx-32 lg:mx-44">
-
+        <div className="">
             <Image
                 className=""
-                src={imgURL}                
+                src={imgURL}
                 loader={() => imgURL}
-                alt=""               
+                alt=""
                 layout="responsive"
                 objectFit="cover"
                 width={1250}
@@ -31,21 +30,11 @@ const Staff = () => {
                 MEET OUR STAFF
             </p>
 
+        <div className="mx-20 md:mx-32 lg:mx-44">           
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20">
 
-                {/* <div className="mt-6">
-                <ul className="leading-8 text-lg text-gray-500 cursor-pointer">
-                    <li className="hover:text-teal-500">Directions</li>
-                    <li className="hover:text-teal-500">Archived Bulletins</li>
-                    <li className="hover:text-teal-500">Current Bulletin</li>
-                    <li className="hover:text-teal-500">Staff</li>
-                    <li className="hover:text-teal-500">Parish History</li>
-                    <li className="hover:text-teal-500">St Peters Cemetery</li>
-                </ul>
-            </div> */}
-
-
-
+                
                 {
                     staffData.map((staff, index) => {
                         return (
@@ -63,6 +52,7 @@ const Staff = () => {
 
 
             </div>
+        </div>
         </div>
     );
 }

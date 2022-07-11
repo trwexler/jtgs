@@ -23,7 +23,7 @@ const Sacraments = () => {
                 height={380}
             />
 
-            <p className="text-xl md:text-2xl lg:text-3xl mt-8 mb-10 text-sky-600 text-center tracking-wider">
+            <p className="text-xl md:text-2xl lg:text-3xl mt-8 mb-10 text-red-800 text-center tracking-wider">
                 Sacraments
             </p>
 
